@@ -9,6 +9,6 @@ resource "azurerm_private_dns_zone_virtual_network_link" "aks_dns_link" {
   name                  = "aks-private-dns-link"
   resource_group_name   = "aks-private-rg"
   private_dns_zone_name = azurerm_private_dns_zone.aks_private_dns.name
-  virtual_network_id    = "ecd54136-5d57-44fa-b219-fe897531044e"
+  virtual_network_id    = "aks-vnet"
   registration_enabled  = false
 }
