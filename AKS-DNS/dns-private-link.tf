@@ -1,14 +1,14 @@
 # Private DNS Zone for AKS Private Cluster API
 resource "azurerm_private_dns_zone" "aks_private_dns" {
   name                = "privatelink.westeurope.azmk8s.io"
-  resource_group_name = var.resource_group_name
+  resource_group_name = "aks-private-rg"
 }
 
 # Virtual Network Link to AKS VNet
 resource "azurerm_private_dns_zone_virtual_network_link" "aks_dns_link" {
   name                  = "aks-private-dns-link"
-  resource_group_name   = var.resource_group_name
+  resource_group_name   = "aks-private-rg"
   private_dns_zone_name = azurerm_private_dns_zone.aks_private_dns.name
-  virtual_network_id    = var.aks_vnet_id
+  virtual_network_id    = "ecd54136-5d57-44fa-b219-fe897531044e"
   registration_enabled  = false
 }
