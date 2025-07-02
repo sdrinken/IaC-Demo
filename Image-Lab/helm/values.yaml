@@ -1,0 +1,13 @@
+image:
+  repository: webmongodbacr.azurecr.io/mongo-webform
+  tag: latest
+
+service:
+  port: 80
+
+env:
+  mongoHost: 192.168.100.4
+  mongoUser: admin
+  mongoPass: StrongPassword123!
+
+namespace: frontend
