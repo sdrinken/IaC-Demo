@@ -28,5 +28,5 @@ variable "resource_group_name" {
 variable "aks_vnet_id" {
   description = "The ID of the existing AKS Virtual Network"
   type        = string
-  default     = "aks-vnet"
+  default     = "/subscriptions/ff5c0a5d-6ff2-4586-8c4e-73497a52972d/resourceGroups/aks-private-rg/providers/Microsoft.Network/virtualNetworks/aks-vnet"
 }
