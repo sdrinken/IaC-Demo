@@ -1,5 +1,5 @@
 image:
-  repository: webmongodbacr.azurecr.io/mongo-webform
+  repository: webmongodbacrlab.azurecr.io/mongo-webform
   tag: latest
 
 service:
