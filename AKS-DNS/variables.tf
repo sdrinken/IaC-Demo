@@ -18,3 +18,15 @@ variable "subscription_id" {
   description = "Azure subscription ID"
   type        = string
 }
+
+variable "resource_group_name" {
+  description = "Name of the existing resource group"
+  type        = string
+  default     = "aks-private-rg"
+}
+
+variable "aks_vnet_id" {
+  description = "The ID of the existing AKS Virtual Network"
+  type        = string
+  default     = "aks-vnet"
+}
